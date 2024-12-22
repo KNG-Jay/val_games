@@ -1,0 +1,1247 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='valorant_games' inline='true' name='federated.1pfoi0p1trey2c1fzhuy017gpf94' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='valorant_games' name='textscan.06i1ruj0gkhhb618vtdzo1i78yka'>
+            <connection class='textscan' directory='C:/Users/KNG James/Downloads' filename='valorant_games.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.06i1ruj0gkhhb618vtdzo1i78yka' name='valorant_games.csv' table='[valorant_games#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='game_id' ordinal='0' />
+            <column datatype='integer' name='episode' ordinal='1' />
+            <column datatype='integer' name='act' ordinal='2' />
+            <column datatype='string' name='rank' ordinal='3' />
+            <column datatype='date' name='date' ordinal='4' />
+            <column datatype='string' name='agent' ordinal='5' />
+            <column datatype='string' name='map' ordinal='6' />
+            <column datatype='string' name='outcome' ordinal='7' />
+            <column datatype='integer' name='round_wins' ordinal='8' />
+            <column datatype='integer' name='round_losses' ordinal='9' />
+            <column datatype='integer' name='kills' ordinal='10' />
+            <column datatype='integer' name='deaths' ordinal='11' />
+            <column datatype='integer' name='assists' ordinal='12' />
+            <column datatype='real' name='kdr' ordinal='13' />
+            <column datatype='integer' name='avg_dmg_delta' ordinal='14' />
+            <column datatype='integer' name='headshot_pct' ordinal='15' />
+            <column datatype='integer' name='avg_dmg' ordinal='16' />
+            <column datatype='integer' name='acs' ordinal='17' />
+            <column datatype='integer' name='num_frag' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>episode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>act</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[act]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>act</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[agent]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>agent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>map</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[map]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>map</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outcome]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>outcome</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round_wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[round_wins]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>round_wins</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round_losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[round_losses]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>round_losses</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[kills]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>kills</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[assists]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>assists</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kdr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kdr]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>kdr</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_dmg_delta</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[avg_dmg_delta]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>avg_dmg_delta</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>headshot_pct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[headshot_pct]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>headshot_pct</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_dmg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[avg_dmg]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>avg_dmg</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[acs]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>acs</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_frag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_frag]</local-name>
+            <parent-name>[valorant_games.csv]</parent-name>
+            <remote-alias>num_frag</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='valorant_games.csv' datatype='table' name='[__tableau_internal_object_id__].[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]' role='measure' type='quantitative' />
+      <column caption='Acs' datatype='integer' name='[acs]' role='measure' type='quantitative' />
+      <column caption='Act' datatype='integer' hidden='true' name='[act]' role='measure' type='quantitative' />
+      <column caption='Agent' datatype='string' name='[agent]' role='dimension' type='nominal' />
+      <column caption='Assists' datatype='integer' name='[assists]' role='measure' type='quantitative' />
+      <column caption='Avg Dmg' datatype='integer' name='[avg_dmg]' role='measure' type='quantitative' />
+      <column caption='Avg Dmg Delta' datatype='integer' name='[avg_dmg_delta]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Episode' datatype='integer' hidden='true' name='[episode]' role='measure' type='quantitative' />
+      <column caption='Game Id' datatype='integer' name='[game_id]' role='dimension' type='ordinal' />
+      <column caption='Headshot Pct' datatype='integer' name='[headshot_pct]' role='measure' type='quantitative' />
+      <column caption='Kdr' datatype='real' name='[kdr]' role='measure' type='quantitative' />
+      <column caption='Kills' datatype='integer' name='[kills]' role='measure' type='quantitative' />
+      <column caption='Map' datatype='string' name='[map]' role='dimension' type='nominal' />
+      <column caption='Num Frag' datatype='integer' name='[num_frag]' role='measure' type='quantitative' />
+      <column caption='Outcome' datatype='string' name='[outcome]' role='dimension' type='nominal' />
+      <column caption='Rank' datatype='string' name='[rank]' role='dimension' type='nominal' />
+      <column caption='Round Losses' datatype='integer' name='[round_losses]' role='measure' type='quantitative' />
+      <column caption='Round Wins' datatype='integer' name='[round_wins]' role='measure' type='quantitative' />
+      <column-instance column='[kills]' derivation='Avg' name='[avg:kills:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[kills]' derivation='Count' name='[cnt:kills:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[kills]' derivation='CountD' name='[ctd:kills:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[agent]' derivation='None' name='[none:agent:nk]' pivot='key' type='nominal' />
+      <column-instance column='[outcome]' derivation='None' name='[none:outcome:nk]' pivot='key' type='nominal' />
+      <column-instance column='[deaths]' derivation='Sum' name='[sum:deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[kills]' derivation='Sum' name='[sum:kills:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[round_losses]' derivation='Sum' name='[sum:round_losses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[round_wins]' derivation='Sum' name='[sum:round_wins:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/KNGJAM~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1h2hbvk0u0wd2x11zqjyx14ikp4r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/21/2024 05:43:09 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>game_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[game_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank</remote-alias>
+              <ordinal>1</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>agent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[agent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>agent</remote-alias>
+              <ordinal>3</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>map</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[map]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>map</remote-alias>
+              <ordinal>4</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outcome</remote-alias>
+              <ordinal>5</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>round_wins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[round_wins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>round_wins</remote-alias>
+              <ordinal>6</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>round_losses</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[round_losses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>round_losses</remote-alias>
+              <ordinal>7</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>kills</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[kills]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>kills</remote-alias>
+              <ordinal>8</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deaths</remote-alias>
+              <ordinal>9</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>assists</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[assists]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>assists</remote-alias>
+              <ordinal>10</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>kdr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[kdr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>kdr</remote-alias>
+              <ordinal>11</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_dmg_delta</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[avg_dmg_delta]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_dmg_delta</remote-alias>
+              <ordinal>12</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>headshot_pct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[headshot_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>headshot_pct</remote-alias>
+              <ordinal>13</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_dmg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[avg_dmg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_dmg</remote-alias>
+              <ordinal>14</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>167</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>acs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[acs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>acs</remote-alias>
+              <ordinal>15</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>245</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_frag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_frag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_frag</remote-alias>
+              <ordinal>16</ordinal>
+              <family>valorant_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[sum:deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[sum:round_wins:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[sum:round_losses:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[avg:kills:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[cnt:kills:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[ctd:kills:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[sum:kills:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:outcome:nk]' type='palette'>
+            <map to='#0000ff'>
+              <bucket>&quot;Draw&quot;</bucket>
+            </map>
+            <map to='#aa0000'>
+              <bucket>&quot;Loss&quot;</bucket>
+            </map>
+            <map to='#ffaa00'>
+              <bucket>&quot;Win&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:agent:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>&quot;Astra&quot;</bucket>
+            </map>
+            <map to='#2ea865'>
+              <bucket>&quot;Brimstone&quot;</bucket>
+            </map>
+            <map to='#32bdb1'>
+              <bucket>&quot;Breach&quot;</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>&quot;Vyse&quot;</bucket>
+            </map>
+            <map to='#8cb12c'>
+              <bucket>&quot;Cypher&quot;</bucket>
+            </map>
+            <map to='#9e6dc2'>
+              <bucket>&quot;Viper&quot;</bucket>
+            </map>
+            <map to='#e33233'>
+              <bucket>&quot;Killjoy&quot;</bucket>
+            </map>
+            <map to='#e670b6'>
+              <bucket>&quot;Phoenix&quot;</bucket>
+            </map>
+            <map to='#ecb921'>
+              <bucket>&quot;Fade&quot;</bucket>
+            </map>
+            <map to='#f8557f'>
+              <bucket>&quot;Omen&quot;</bucket>
+            </map>
+            <map to='#f88113'>
+              <bucket>&quot;KAY/O&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='valorant_games.csv' id='valorant_games.csv_01C3BB97FB844FE1BBAC634B91117B79'>
+            <properties context=''>
+              <relation connection='textscan.06i1ruj0gkhhb618vtdzo1i78yka' name='valorant_games.csv' table='[valorant_games#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='game_id' ordinal='0' />
+                  <column datatype='integer' name='episode' ordinal='1' />
+                  <column datatype='integer' name='act' ordinal='2' />
+                  <column datatype='string' name='rank' ordinal='3' />
+                  <column datatype='date' name='date' ordinal='4' />
+                  <column datatype='string' name='agent' ordinal='5' />
+                  <column datatype='string' name='map' ordinal='6' />
+                  <column datatype='string' name='outcome' ordinal='7' />
+                  <column datatype='integer' name='round_wins' ordinal='8' />
+                  <column datatype='integer' name='round_losses' ordinal='9' />
+                  <column datatype='integer' name='kills' ordinal='10' />
+                  <column datatype='integer' name='deaths' ordinal='11' />
+                  <column datatype='integer' name='assists' ordinal='12' />
+                  <column datatype='real' name='kdr' ordinal='13' />
+                  <column datatype='integer' name='avg_dmg_delta' ordinal='14' />
+                  <column datatype='integer' name='headshot_pct' ordinal='15' />
+                  <column datatype='integer' name='avg_dmg' ordinal='16' />
+                  <column datatype='integer' name='acs' ordinal='17' />
+                  <column datatype='integer' name='num_frag' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Agents + win/loss'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='valorant_games' name='federated.1pfoi0p1trey2c1fzhuy017gpf94' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfoi0p1trey2c1fzhuy017gpf94'>
+            <column caption='Agent' datatype='string' name='[agent]' role='dimension' type='nominal' />
+            <column caption='Map' datatype='string' name='[map]' role='dimension' type='nominal' />
+            <column-instance column='[agent]' derivation='None' name='[none:agent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[map]' derivation='None' name='[none:map:nk]' pivot='key' type='nominal' />
+            <column caption='Round Losses' datatype='integer' name='[round_losses]' role='measure' type='quantitative' />
+            <column caption='Round Wins' datatype='integer' name='[round_wins]' role='measure' type='quantitative' />
+            <column-instance column='[round_losses]' derivation='Sum' name='[sum:round_losses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[round_wins]' derivation='Sum' name='[sum:round_wins:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[sum:round_losses:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfoi0p1trey2c1fzhuy017gpf94].[sum:round_wins:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pfoi0p1trey2c1fzhuy017gpf94].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:agent:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pfoi0p1trey2c1fzhuy017gpf94].[Multiple Values]</rows>
+        <cols>([federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:map:nk] / [federated.1pfoi0p1trey2c1fzhuy017gpf94].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{000DE4F9-8E8F-42D4-B7C1-146D2DCDE34B}' />
+    </worksheet>
+    <worksheet name='Rank &amp; outcome'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='valorant_games' name='federated.1pfoi0p1trey2c1fzhuy017gpf94' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfoi0p1trey2c1fzhuy017gpf94'>
+            <column-instance column='[outcome]' derivation='Count' name='[cnt:outcome:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[outcome]' derivation='None' name='[none:outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rank]' derivation='None' name='[none:rank:nk]' pivot='key' type='nominal' />
+            <column caption='Outcome' datatype='string' name='[outcome]' role='dimension' type='nominal' />
+            <column caption='Rank' datatype='string' name='[rank]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:rank:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[cnt:outcome:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:outcome:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pfoi0p1trey2c1fzhuy017gpf94].[cnt:outcome:qk]</rows>
+        <cols>[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:rank:nk]</cols>
+      </table>
+      <simple-id uuid='{20911B93-33CC-4030-914D-CACDC9B377ED}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1260' maxwidth='1450' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='32894' id='7' param='horz' type-v2='layout-flow' w='98842' x='579' y='658'>
+            <zone fixed-size='160' h='32894' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='98842' x='579' y='658'>
+              <zone h='32894' id='13' name='Rank &amp; outcome' w='98842' x='579' y='658'>
+                <layout-cache minheight='203' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='49383' id='11' name='Agents + win/loss' w='98842' x='579' y='49959'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='10234' id='12' name='Agents + win/loss' pane-specification-id='0' param='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:agent:nk]' type-v2='color' w='98842' x='579' y='39725'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='68' h='6173' id='14' is-fixed='true' name='Rank &amp; outcome' pane-specification-id='0' param='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:outcome:nk]' type-v2='color' w='98842' x='579' y='33552'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='17' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='32894' id='13' is-fixed='true' name='Rank &amp; outcome' w='98842' x='579' y='658'>
+                  <layout-cache minheight='203' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='6173' id='14' name='Rank &amp; outcome' pane-specification-id='0' param='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:outcome:nk]' type-v2='color' w='98842' x='579' y='33552'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49383' id='11' is-fixed='true' name='Agents + win/loss' w='98842' x='579' y='49959'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10234' id='12' name='Agents + win/loss' pane-specification-id='0' param='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:agent:nk]' type-v2='color' w='98842' x='579' y='39725'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2642B699-8A21-4F9A-8826-ADE5189BAAC7}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='1160' maxwidth='1250' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='' h='98620' id='3' param='https://github.com/KNG-Jay/val_games/blob/master/val.ipynb' type-v2='web' w='98720' x='640' y='690'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' forceUpdate='' h='98620' id='3' is-fixed='true' param='https://github.com/KNG-Jay/val_games/blob/master/val.ipynb' type-v2='web' w='98720' x='640' y='690'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BA76EA0D-5EEA-4742-94E5-28BF93910282}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98684' id='1' param='vert' removable='false' type-v2='layout-flow' w='98842' x='579' y='658'>
+            <zone h='2716' id='3' type-v2='title' w='98842' x='579' y='658' />
+            <zone h='8313' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98842' x='579' y='3374' />
+            <zone h='87655' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98842' x='579' y='11687'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='-Rank &amp; Outcome          -Agents + win/loss' captured-sheet='Dashboard 1' id='1' />
+                  <story-point caption='Jupyter Notebook' captured-sheet='Dashboard 2' id='2' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{91AD172F-74A5-4238-8C52-5D64F1BC55F0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Rank &amp; outcome'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:outcome:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EF11872-32F4-4EE5-B54E-F745C46E9B32}' />
+    </window>
+    <window class='worksheet' name='Agents + win/loss'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pfoi0p1trey2c1fzhuy017gpf94].[none:agent:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1710A80B-2C9C-4714-86F1-62466A5B099F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Agents + win/loss'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Rank &amp; outcome'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EAC166B3-8845-4B1D-9198-B78D96DEF2F0}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{49C317A0-1F22-4855-B214-155C4815E673}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D7B14420-2DBF-4636-93A5-DBAC0CBC4427}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+      KpiFFR3CAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
